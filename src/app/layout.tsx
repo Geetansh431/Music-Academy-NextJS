@@ -21,6 +21,8 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
+  // this defines ki children joh h woh sirf readonly type h
+  // or uski type react.reactNode hogi
   children: React.ReactNode;
 }>) {
   return (
@@ -28,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <h2>Nav Item</h2>
         {children}
       </body>
     </html>
